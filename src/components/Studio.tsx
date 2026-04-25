@@ -10,7 +10,7 @@ export default function Studio() {
         <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
           <FadeIn>
             <img 
-              src="/Studio1.jpg" 
+              src={`${import.meta.env.BASE_URL}Studio1.jpg`} 
               alt="Aria Studio View 1" 
               className="w-full h-auto object-cover rounded-sm shadow-xl"
               referrerPolicy="no-referrer"
@@ -18,7 +18,7 @@ export default function Studio() {
           </FadeIn>
           <FadeIn delay={0.2}>
             <img 
-              src="/Studio2.jpg" 
+              src={`${import.meta.env.BASE_URL}Studio2.jpg`} 
               alt="Aria Studio View 2" 
               className="w-full h-auto object-cover rounded-sm shadow-xl"
               referrerPolicy="no-referrer"

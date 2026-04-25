@@ -5,7 +5,7 @@ const TEACHERS = [
     id: 'zichao-yan',
     name: 'Zichao Yan',
     title: 'Master of Music in Piano Performance',
-    image: '/Zichao.jpg',
+    image: `${import.meta.env.BASE_URL}Zichao.jpg`,
     education: 'M.M., Indiana University Jacobs School of Music\nB.M., Renmin University of China\nShenzhen Art School',
     experience: 'Award-winning Soloist & Chamber Musician',
     bio: [
