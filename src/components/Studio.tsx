@@ -7,12 +7,12 @@ export default function Studio() {
       <div className="max-w-7xl mx-auto flex flex-col gap-16 lg:gap-24">
         
         {/* Image Gallery - Now taking up full width at the top */}
-        <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+        <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
           <FadeIn>
             <img 
               src={`${import.meta.env.BASE_URL}Studio1.jpg`} 
               alt="Aria Studio View 1" 
-              className="w-full h-auto object-cover rounded-sm shadow-xl"
+              className="w-full h-auto aspect-square object-cover rounded-sm shadow-xl"
               referrerPolicy="no-referrer"
             />
           </FadeIn>
@@ -20,7 +20,15 @@ export default function Studio() {
             <img 
               src={`${import.meta.env.BASE_URL}Studio2.jpg`} 
               alt="Aria Studio View 2" 
-              className="w-full h-auto object-cover rounded-sm shadow-xl"
+              className="w-full h-auto aspect-square object-cover rounded-sm shadow-xl"
+              referrerPolicy="no-referrer"
+            />
+          </FadeIn>
+          <FadeIn delay={0.4}>
+            <img 
+              src={`${import.meta.env.BASE_URL}Studio3.jpg`} 
+              alt="Aria Studio View 3" 
+              className="w-full h-auto aspect-square object-cover rounded-sm shadow-xl"
               referrerPolicy="no-referrer"
             />
           </FadeIn>
