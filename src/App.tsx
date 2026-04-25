@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Studio from './components/Studio';
@@ -21,7 +21,7 @@ function ScrollToTop() {
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <ScrollToTop />
       <div className="font-sans min-h-screen flex flex-col bg-brand-light">
         <Navbar />
@@ -41,6 +41,6 @@ export default function App() {
           </p>
         </footer>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
