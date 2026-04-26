@@ -17,29 +17,36 @@ const TEACHERS = [
     ]
   },
   {
-    id: 'teacher-2',
-    name: 'Teacher Name (Placeholder)',
+    id: 'yutong-guo',
+    name: 'Yutong Guo',
     title: 'Master of Music in Piano Performance',
-    image: 'https://images.unsplash.com/photo-1522204657746-fcbaec64ecdb?auto=format&fit=crop&q=80&w=1500',
-    education: 'M.M. Piano Performance\nConservatory of Music',
-    experience: '10+ Years Teaching\nInternational Soloist',
+    image: `${import.meta.env.BASE_URL}Yutong Guo.jpg`,
+    education: 'M.M., Indiana University Jacobs School of Music\nB.M., Renmin University of China',
+    experience: 'Active Concert Performer & Experienced Educator',
     bio: [
-      "This is a placeholder for the second teacher's biography. You can easily update this text in the codebase with their actual background, teaching philosophy, and musical journey.",
-      "They hold an advanced degree from a top-tier music conservatory and have performed extensively in various renowned venues. Their teaching approach focuses on building a solid technical foundation while nurturing the student's inherent musicality.",
-      "Passionate about pedagogical excellence, they tailor their lessons to meet the unique goals of each student, ensuring a supportive and highly inspiring learning environment."
+      "Yutong Guo is a dedicated pianist and passionate educator, currently pursuing advanced musical training with a strong foundation in piano performance.",
+      "He holds a Bachelor of Music in Music Performance, majoring in Piano, from the School of Arts at Renmin University of China, where he studied under Associate Professor Kang Yuchun. During his undergraduate studies, he maintained strong academic performance and developed extensive experience in solo performance, collaborative piano, accompaniment, and teaching. Currently he is pursuing his Master of Music in Piano Performance at Indiana University Jacobs School of Music under Associate Professor Dinara Klinton.",
+      "As an active performer, Yutong has appeared in numerous concerts, including the Renmin University New Year's Concert, the \"Encountering Masters\" concert series, the Capital Universities Piano Exchange Concert, and solo recitals at Renmin University of China Concert Hall. His performance experience spans both classical piano repertoire and selected jazz-influenced works.",
+      "Yutong's teaching focuses primarily on classical piano, with instruction available for beginners, children, intermediate students, and advanced learners. In addition, he also offers introductory coaching in simple Jazz improvisation piano, helping students explore harmony, rhythm, and creative expression at the keyboard.",
+      "With experience as a part-time piano teacher and accompanist, Yutong is committed to helping students build solid technique, musical sensitivity, confidence, and their own individual musical voice."
     ]
   },
   {
-    id: 'teacher-3',
-    name: 'Teacher Name (Placeholder)',
-    title: 'Doctor of Musical Arts (Candidate)',
-    image: 'https://images.unsplash.com/photo-1552422535-c45813c61732?auto=format&fit=crop&q=80&w=1500',
-    education: 'D.M.A. Candidate\nUniversity of Music',
-    experience: 'Masterclass Instructor\nConcert Pianist',
+    id: 'yan-tong',
+    name: 'Yan Tong',
+    title: 'Master of Music in Piano Performance',
+    image: `${import.meta.env.BASE_URL}Yan Tong.jpg`,
+    education: 'M.M., Indiana University Jacobs School of Music\nB.M., Indiana University Jacobs School of Music\nWuhan Conservatory of Music Affiliated Schools',
+    experience: 'Competition Laureate & Active Performer',
     bio: [
-      "This is a placeholder for the third teacher's biography. Replace this content with their specific achievements, educational background, and teaching experience.",
-      "With an extensive background in both performance and music theory, they provide a well-rounded and deeply enriching curriculum for students of all ages and levels.",
-      "Whether preparing for high-stakes competitions, examinations, or simply playing for personal enjoyment, their goal is to foster a lifelong love and appreciation for the piano."
+      "Yan Tong is a pianist and educator currently pursuing his Master of Music in Piano Performance at the Indiana University Jacobs School of Music.",
+      "He received his Bachelor of Music in Piano Performance from the Jacobs School of Music. Before that, he received long-term and systematic pre-college musical training at the Wuhan Conservatory of Music Affiliated Primary School, Secondary School, and High School, where he focused on piano performance. Yan has studied with distinguished piano teachers including Jian Wang, André Watts, Edward Auer, Jungwa Moon Auer, and Chi-Hao Han.",
+      "In addition to his piano studies, Yan has also studied harpsichord, conducted musical research and study in Taiwan, participated in an international competition in South Korea, and attended a program at Interlochen Arts Academy. These experiences have broadened his artistic perspective and helped him develop a deeper understanding of music across different cultural and educational settings.",
+      "As an active performer, Yan has presented and participated in performances at venues including Recital Hall, Auer Hall, Xianning TV Station, and Bianzhong Concert Hall in Wuhan. His repertoire has included works by Mozart, Bach, Beethoven, Chopin, Schumann, and Rachmaninoff.",
+      "Yan has also received recognition in several competitions and evaluations, including the Silver Piano Award at the Taiwan Cup Music Competition, the Gold Award at the Korea-China International Youth Music Competition, the Silver Award at the Shanghai International Youth Competition, and First Prize at the Global Outstanding Young Pianists Competition, Hubei Division. These experiences have contributed to his growth as both a performer and musician.",
+      "In his teaching, Yan works with students of different ages and levels, including children, adult beginners, early-level students, and advanced pianists. He believes that each student learns at a different pace, and he designs his teaching approach according to each student’s progress, personality, and musical goals rather than relying on a single fixed method.",
+      "In lessons, Yan not only helps students build a solid technical foundation, but also introduces music theory, harmony, structure, and stylistic understanding through the pieces they are studying. By connecting technical training with musical context, he helps students understand how to shape phrases, control tone color, create musical layers, and express the character of each work more naturally.",
+      "Yan believes that good piano teaching is not only about helping students play the correct notes, but also about guiding them to understand and express music with confidence. He is committed to helping every student grow at their own pace, develop independent musical thinking, and discover their own unique musical voice."
     ]
   }
 ];
