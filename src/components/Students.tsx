@@ -32,6 +32,14 @@ const STUDENTS = [
     piece: "Jazz Performance",
     type: "local",
     url: "Jazz.mov",
+  },
+  {
+    id: 5,
+    name: "Student Performance",
+    level: "Advanced",
+    piece: "Piano Performance",
+    type: "youtube",
+    url: "https://www.youtube.com/embed/CX5ol7aBpug",
   }
 ];
 
