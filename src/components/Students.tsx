@@ -1,27 +1,37 @@
 import FadeIn from './FadeIn';
-import { Play } from 'lucide-react';
 
 const STUDENTS = [
   {
     id: 1,
     name: "Student Performance",
-    level: "Showcase",
+    level: "Advanced",
     piece: "Piano Performance",
-    youtubeId: "CX5ol7aBpug",
+    type: "youtube",
+    url: "https://www.youtube.com/embed/sPb47w6uQZY",
   },
   {
     id: 2,
-    name: "James T.",
+    name: "Student Performance",
     level: "Intermediate",
-    piece: "Debussy - Clair de Lune",
-    thumbnail: "https://images.unsplash.com/photo-1605020420620-20c943cc4669?auto=format&fit=crop&q=80&w=800",
+    piece: "Piano Performance",
+    type: "youtube",
+    url: "https://www.youtube.com/embed/F8Run_N7PKI",
   },
   {
     id: 3,
-    name: "Sophia L.",
-    level: "Beginner",
-    piece: "Bach - Minuet in G",
-    thumbnail: "https://images.unsplash.com/photo-1460036521480-a3854832ebce?auto=format&fit=crop&q=80&w=800",
+    name: "Student Performance",
+    level: "Intermediate",
+    piece: "Piano Performance",
+    type: "youtube",
+    url: "https://www.youtube.com/embed/M_DKK1rxs-4",
+  },
+  {
+    id: 4,
+    name: "Student Performance",
+    level: "Advanced",
+    piece: "Jazz Performance",
+    type: "local",
+    url: "Jazz.mov",
   }
 ];
 
@@ -39,34 +49,29 @@ export default function Students() {
           </div>
         </FadeIn>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
           {STUDENTS.map((student, index) => (
             <FadeIn key={student.id} delay={0.2 * (index + 1)}>
-              <div className="group cursor-pointer">
+              <div className="group">
                 <div className="relative overflow-hidden rounded-sm bg-brand-dark aspect-video mb-4">
-                  {student.youtubeId ? (
+                  {student.type === 'youtube' ? (
                     <iframe 
-                      className="absolute top-0 left-0 w-full h-full"
-                      src={`https://www.youtube.com/embed/${student.youtubeId}`} 
+                      className="w-full h-full absolute top-0 left-0"
+                      src={student.url} 
                       title={student.piece}
                       frameBorder="0" 
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                      referrerPolicy="strict-origin-when-cross-origin" 
                       allowFullScreen
                     ></iframe>
                   ) : (
-                    <>
-                      <img 
-                        src={student.thumbnail} 
-                        alt={student.piece}
-                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-60"
-                        referrerPolicy="no-referrer"
-                      />
-                      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                        <div className="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center border border-white/40 transition-transform duration-300 group-hover:scale-110">
-                          <Play className="text-white ml-1 fill-white" size={24} />
-                        </div>
-                      </div>
-                    </>
+                    <video 
+                      className="w-full h-full object-cover absolute top-0 left-0"
+                      controls
+                      src={`${import.meta.env.BASE_URL}${student.url}`}
+                    >
+                      Your browser does not support the video tag.
+                    </video>
                   )}
                 </div>
                 <div>
